@@ -1,0 +1,775 @@
+2022/12/13 05:49:06 [error] [php] Function get_magic_quotes_gpc() is deprecated (C:\laragon\www\yii\framework\web\CHttpRequest.php:119)
+Stack trace:
+#0 C:\laragon\www\yii\framework\base\CApplication.php(494): CWebApplication->getComponent()
+#1 C:\laragon\www\yii\framework\web\CWebApplication.php(535): CWebApplication->getRequest()
+#2 C:\laragon\www\yii\framework\base\CApplication.php(148): CWebApplication->init()
+#3 C:\laragon\www\yii\framework\YiiBase.php(127): CWebApplication->__construct()
+#4 C:\laragon\www\yii\framework\YiiBase.php(100): createApplication()
+#5 C:\laragon\www\yii\facilito\index.php(13): createWebApplication()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/14 20:50:31 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login.html". in C:\laragon\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(271): CController->missingAction('login.html')
+#1 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('login.html')
+#2 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login.html')
+#3 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/facilito/site/login.html
+HTTP_REFERER=http://localhost/yii/facilito/site/page.html?view=about
+---
+2022/12/14 20:50:53 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.asp". in C:\laragon\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(271): CController->missingAction('index.asp')
+#1 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index.asp')
+#2 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index.asp')
+#3 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/facilito/site/index.asp
+HTTP_REFERER=http://localhost/yii/facilito/site/login.asp
+---
+2022/12/15 03:11:03 [error] [exception.Error] Error: Class 'Users' not found in C:\laragon\www\yii\framework\db\ar\CActiveRecord.php:378
+Stack trace:
+#0 C:\laragon\www\yii\facilito\protected\controllers\HolaController.php(7): CActiveRecord::model('Users')
+#1 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): HolaController->actionIndex()
+#2 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#6 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('hola/index')
+#7 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/facilito/hola/index
+---
+2022/12/15 03:21:41 [error] [exception.ParseError] ParseError: syntax error, unexpected '(', expecting variable (T_VARIABLE) in C:\laragon\www\yii\facilito\protected\models\Users.php:4
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Users')
+#1 C:\laragon\www\yii\facilito\protected\controllers\HolaController.php(7): spl_autoload_call('Users')
+#2 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): HolaController->actionIndex()
+#3 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('hola/index')
+#8 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/facilito/hola/index
+---
+2022/12/15 03:27:05 [error] [php] count(): Parameter must be an array or an object that implements Countable (C:\laragon\www\yii\framework\gii\generators\model\ModelCode.php:343)
+Stack trace:
+#0 C:\laragon\www\yii\framework\gii\CCodeGenerator.php(161): ModelCode->prepare()
+#1 C:\laragon\www\yii\framework\gii\CCodeGenerator.php(64): ModelGenerator->prepare()
+#2 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): ModelGenerator->actionIndex()
+#3 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\laragon\www\yii\framework\web\CController.php(287): ModelGenerator->runAction()
+#5 C:\laragon\www\yii\framework\web\CController.php(266): ModelGenerator->runActionWithFilters()
+#6 C:\laragon\www\yii\framework\web\CWebApplication.php(276): ModelGenerator->run()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/gii/model.html
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 03:28:44 [error] [php] The each() function is deprecated. This message will be suppressed on further calls (C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff\Engine\native.php:195)
+Stack trace:
+#0 C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff\Engine\native.php(88): Text_Diff_Engine_native->_compareseq()
+#1 C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff.php(56): Text_Diff_Engine_native->diff()
+#2 C:\laragon\www\yii\framework\gii\components\TextDiff.php(18): Text_Diff->Text_Diff()
+#3 C:\laragon\www\yii\framework\gii\CCodeGenerator.php(108): compare()
+#4 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): ModelGenerator->actionDiff()
+#5 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\laragon\www\yii\framework\web\CController.php(287): ModelGenerator->runAction()
+#7 C:\laragon\www\yii\framework\web\CController.php(266): ModelGenerator->runActionWithFilters()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(276): ModelGenerator->run()
+#9 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/gii/model/diff/id/0.html
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:09:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/bootstrap.min.css". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/yii/facilito/site/page.html?view=about
+---
+2022/12/15 04:09:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/js/jquery.js". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/js/jquery.js
+HTTP_REFERER=http://localhost/yii/facilito/site/page.html?view=about
+---
+2022/12/15 04:09:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/responsive.min.css". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost/yii/facilito/site/page.html?view=about
+---
+2022/12/15 04:09:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/js/bootstrap.min.js". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/yii/facilito/site/page.html?view=about
+---
+2022/12/15 04:09:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/ico/favicon.png". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/ico/favicon.png
+HTTP_REFERER=http://localhost/yii/facilito/site/page.html?view=about
+---
+2022/12/15 04:09:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/js/bootstrap.min.js". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:09:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/js/jquery.js". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/js/jquery.js
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:09:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/responsive.min.css". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:09:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/bootstrap.min.css". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:11:47 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\protected\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:12:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/bootstrap.min.css". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:12:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/responsive.min.css". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:12:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/js/jquery.js". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/js/jquery.js
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:12:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/js/bootstrap.min.js". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:12:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/ico/favicon.png". in C:\laragon\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('themes/classic/...')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facilito/themes/classic/ico/favicon.png
+HTTP_REFERER=http://localhost/yii/facilito/site/index.html
+---
+2022/12/15 04:13:15 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:22:10 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:25:18 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function CActiveForm::labelEx(), 1 passed in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php on line 43 and at least 2 expected in C:\laragon\www\yii\framework\web\widgets\CActiveForm.php:558
+Stack trace:
+#0 C:\laragon\www\yii\facilito\themes\classic\views\site\index.php(43): CActiveForm->labelEx('username')
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(127): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\\laragon\\www\\...', NULL, true)
+#3 C:\laragon\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\\laragon\\www\\...', NULL, true)
+#4 C:\laragon\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#5 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): CController->render('index')
+#6 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#11 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#12 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/facilito/site/index.html
+HTTP_REFERER=http://localhost/yii/facilito/site/contact.html
+---
+2022/12/15 04:25:30 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:31:13 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:40:42 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (32)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:42:24 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:44:25 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 04:47:11 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 05:12:30 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 05:13:53 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 05:14:53 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function CActiveForm::labelEx(), 1 passed in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php on line 43 and at least 2 expected in C:\laragon\www\yii\framework\web\widgets\CActiveForm.php:558
+Stack trace:
+#0 C:\laragon\www\yii\facilito\themes\classic\views\site\index.php(43): CActiveForm->labelEx('username')
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(127): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\\laragon\\www\\...', NULL, true)
+#3 C:\laragon\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\\laragon\\www\\...', NULL, true)
+#4 C:\laragon\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#5 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): CController->render('index')
+#6 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#11 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#12 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/facilito/site/index.html
+HTTP_REFERER=http://localhost/yii/facilito/site/page.html?view=about
+---
+2022/12/15 05:26:18 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 05:45:50 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 05:46:07 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 06:12:13 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 06:12:16 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 06:12:22 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 06:12:26 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 06:43:42 [error] [exception.Error] Error: Call to a member function findAll() on null in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php:11
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#1 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('countries/index')
+#6 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/facilito/countries/index
+---
+2022/12/15 06:45:31 [error] [exception.Error] Error: Call to a member function findAll() on null in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php:11
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#1 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('countries/index')
+#6 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/facilito/countries/index
+---
+2022/12/15 06:46:17 [error] [exception.Error] Error: Function name must be a string in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php:12
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#1 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('countries/index')
+#6 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/facilito/countries/index
+---
+2022/12/15 06:47:01 [error] [exception.Error] Error: Function name must be a string in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php:12
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#1 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('countries/index')
+#6 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/facilito/countries/index
+---
+2022/12/15 06:47:18 [error] [exception.Error] Error: Function name must be a string in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php:12
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#1 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('countries/index')
+#6 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/facilito/countries/index
+---
+2022/12/15 06:47:30 [error] [exception.Error] Error: Function name must be a string in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php:12
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#1 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('countries/index')
+#6 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/facilito/countries/index
+---
+2022/12/15 06:47:53 [error] [php] include(status.php): failed to open stream: No such file or directory (C:\laragon\www\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\laragon\www\yii\framework\validators\CValidator.php(171): import()
+#1 C:\laragon\www\yii\framework\base\CModel.php(285): createValidator()
+#2 C:\laragon\www\yii\framework\base\CModel.php(259): Countries->createValidators()
+#3 C:\laragon\www\yii\framework\base\CModel.php(157): Countries->getValidators()
+#4 C:\laragon\www\yii\framework\db\ar\CActiveRecord.php(786): Countries->validate()
+#5 C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php(9): Countries->save()
+#6 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#7 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\laragon\www\yii\framework\web\CController.php(287): CountriesController->runAction()
+#9 C:\laragon\www\yii\framework\web\CController.php(266): CountriesController->runActionWithFilters()
+#10 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CountriesController->run()
+#11 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/countries/index
+in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php (9)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/15 06:49:02 [error] [exception.Error] Error: Function name must be a string in C:\laragon\www\yii\facilito\protected\controllers\CountriesController.php:12
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): CountriesController->actionIndex()
+#1 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#5 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('countries/index')
+#6 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\laragon\www\yii\facilito\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/facilito/countries/index
+---
+2022/12/15 23:59:00 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2022/12/20 05:02:24 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2023/01/16 17:37:42 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2023/01/25 15:13:51 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2023/01/25 15:13:54 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/site/index.html
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
+2023/01/25 15:14:21 [error] [php] Undefined variable: model (C:\laragon\www\yii\facilito\themes\classic\views\site\index.php:43)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\laragon\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\laragon\www\yii\facilito\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\laragon\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\laragon\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\laragon\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\laragon\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\laragon\www\yii\facilito\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facilito/
+in C:\laragon\www\yii\facilito\themes\classic\views\site\index.php (43)
+in C:\laragon\www\yii\facilito\protected\controllers\SiteController.php (33)
+in C:\laragon\www\yii\facilito\index.php (13)
